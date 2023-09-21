@@ -21,7 +21,7 @@ const Notes = () => {
         if (!isActive && notes.length > 0) {
             dispatch(setActiveNote(notes[notes.length - 1].id));
         }
-    }, [notes]);
+    }, [notes, dispatch]);
 
     return (
         <div className={styles.notes}>
