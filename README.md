@@ -1,8 +1,8 @@
 # View the deployed website
 [Notes App](https://fluffy-jelly-c1db73.netlify.app/)
 
-
-
+# My web CV
+[olegdub.web.app](https://olegdub.web.app)
 
 # Getting Started with Create React App
 
