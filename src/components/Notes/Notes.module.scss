@@ -1,0 +1,47 @@
+@import '../../vars.scss';
+.notes {
+    min-width: 500px;
+    max-width: 1000px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .formNoteAdd {
+        display: flex;
+        margin: 10px 0;
+        gap: 10px;
+        input {
+            @include input;
+        }
+        button {
+            @include button;
+            border-color: $note-blue;
+            background-color: $note-blue;
+            color: $white;
+            &:hover {
+                color: $white;
+                background-color: $note-blue-hover;
+                border-color: $note-blue-hover;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+    }
+}
+@media (max-width: 768px) {
+    .notes {
+        min-width: auto;
+        margin: 0;
+    }
+}

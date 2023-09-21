@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Notes from './components/Notes/Notes';
+import Comments from './components/Comments/Comments';
+import style from './App.module.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={style.App}>
+            <div className={style.col1}>
+                <Sidebar />
+            </div>
+            <div className={style.col2}>
+                <main>
+                    <Notes />
+                    <Comments />
+                </main>
+            </div>
+        </div>
+    );
 }
 
 export default App;
